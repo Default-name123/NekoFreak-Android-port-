@@ -1,0 +1,45 @@
+{ "frames": {
+   "happy instance 0": {
+    "frame": { "x": 0, "y": 0, "w": 293, "h": 271 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 293, "h": 271 },
+    "sourceSize": { "w": 293, "h": 271 },
+    "duration": 41
+   },
+   "sad instance 0": {
+    "frame": { "x": 293, "y": 0, "w": 293, "h": 271 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 293, "h": 271 },
+    "sourceSize": { "w": 293, "h": 271 },
+    "duration": 41
+   },
+   "datura instance 0": {
+    "frame": { "x": 586, "y": 0, "w": 293, "h": 271 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 293, "h": 271 },
+    "sourceSize": { "w": 293, "h": 271 },
+    "duration": 41
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.27-dev",
+  "image": "mia_portraits.png",
+  "format": "RGBA8888",
+  "size": { "w": 879, "h": 271 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "happy", "from": 0, "to": 0, "direction": "forward" },
+   { "name": "sad", "from": 1, "to": 1, "direction": "forward" },
+   { "name": "datura", "from": 2, "to": 2, "direction": "forward" }
+  ],
+  "layers": [
+   { "name": "Layer", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}
