@@ -1,0 +1,7 @@
+living-room
+bed-room
+bed-room-fast
+room-104
+room-104-datura
+hallway
+hallway2

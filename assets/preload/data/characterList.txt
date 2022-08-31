@@ -1,0 +1,11 @@
+bf-fresh
+bf-confused
+bf-annoyed
+bf-scared
+lia-normal
+lia-suit
+lia-bloody
+mia-normal
+mia-datura
+kia-normal
+kia-shaggy
