@@ -37,6 +37,18 @@ class HealthIcon extends FlxSprite
 		animation.add('parents-christmas', [17, 18], 0, false, isPlayer);
 		animation.add('monster', [19, 20], 0, false, isPlayer);
 		animation.add('monster-christmas', [19, 20], 0, false, isPlayer);
+		animation.add('bf-fresh', [0, 1], 0, false, isPlayer);
+		animation.add('bf-confused', [12, 12], 0, false, isPlayer);
+		animation.add('bf-annoyed', [12, 12], 0, false, isPlayer);
+		animation.add('bf-scared', [13, 13], 0, false, isPlayer);
+		animation.add('lia-normal', [24, 25], 0, false, isPlayer);
+		animation.add('lia-suit', [26, 27], 0, false, isPlayer);
+		animation.add('lia-bloody', [27, 27], 0, false, isPlayer);
+		animation.add('mia-normal', [28, 29], 0, false, isPlayer);
+		animation.add('mia-datura', [33, 33], 0, false, isPlayer);
+		animation.add('kia-normal', [30, 31], 0, false, isPlayer);
+		animation.add('kia-shaggy', [32, 32], 0, false, isPlayer);       
+		animation.add('anthem', [2, 2], 0, false, isPlayer);                
 		animation.play(char);
 
 		switch(char)
