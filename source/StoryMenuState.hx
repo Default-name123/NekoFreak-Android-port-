@@ -25,36 +25,24 @@ class StoryMenuState extends MusicBeatState
 	var scoreText:FlxText;
 
 	var weekData:Array<Dynamic> = [
-		['Tutorial'],
-		['Bopeebo', 'Fresh', 'Dad Battle'],
-		['Spookeez', 'South', "Monster"],
-		['Pico', 'Philly Nice', "Blammed"],
-		['Satin Panties', "High", "Milf"],
-		['Cocoa', 'Eggnog', 'Winter Horrorland'],
-		['Senpai', 'Roses', 'Thorns']
+		['The Date', 'Red Flag', 'GTFO'],
+		['Left Swipe', 'Trippin', 'Datura Dynamo'],
+		['Smol', 'Frontin', 'Hubris'],
 	];
 	var curDifficulty:Int = 1;
 
-	public static var weekUnlocked:Array<Bool> = [true, true, true, true, true, true, true];
+	public static var weekUnlocked:Array<Bool> = [true,true,true];
 
 	var weekCharacters:Array<Dynamic> = [
-		['', 'bf', 'gf'],
-		['dad', 'bf', 'gf'],
-		['spooky', 'bf', 'gf'],
-		['pico', 'bf', 'gf'],
-		['mom', 'bf', 'gf'],
-		['parents-christmas', 'bf', 'gf'],
-		['senpai', 'bf', 'gf']
+		['dad', 'bf', ''],
+		['spooky', 'bf', ''],
+		['pico', 'bf', ''],
 	];
 
 	var weekNames:Array<String> = [
-		"",
-		"Daddy Dearest",
-		"Spooky Month",
-		"PICO",
-		"MOMMY MUST MURDER",
-		"RED SNOW",
-		"Hating Simulator ft. Moawling"
+		"60 Days Before GF",
+		"46 Days Before GF",
+		"32 Days Before GF",
 	];
 
 	var txtWeekTitle:FlxText;
@@ -77,7 +65,7 @@ class StoryMenuState extends MusicBeatState
 	{
 		#if windows
 		// Updating Discord Rich Presence
-		DiscordClient.changePresence("In the Story Mode Menu", null);
+		DiscordClient.changePresence("Looking through Quinder", null);
 		#end
 
 		transIn = FlxTransitionableState.defaultTransIn;
@@ -200,7 +188,7 @@ class StoryMenuState extends MusicBeatState
 		#if mobileC
 		addVirtualPad(FULL, A_B);
 		#end
-
+		
 		super.create();
 	}
 
@@ -209,7 +197,7 @@ class StoryMenuState extends MusicBeatState
 		// scoreText.setFormat('VCR OSD Mono', 32);
 		lerpScore = Math.floor(FlxMath.lerp(lerpScore, intendedScore, 0.5));
 
-		scoreText.text = "WEEK SCORE:" + lerpScore;
+		scoreText.text = "DATE SCORE:" + lerpScore;
 
 		txtWeekTitle.text = weekNames[curWeek].toUpperCase();
 		txtWeekTitle.x = FlxG.width - (txtWeekTitle.width + 10);
@@ -259,12 +247,12 @@ class StoryMenuState extends MusicBeatState
 					}
 				}
 
-				if (controls.UP_P)
+				if (FlxG.keys.justPressed.UP)
 				{
 					changeWeek(-1);
 				}
 
-				if (controls.DOWN_P)
+				if (FlxG.keys.justPressed.DOWN)
 				{
 					changeWeek(1);
 				}
