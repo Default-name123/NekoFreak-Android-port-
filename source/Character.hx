@@ -498,6 +498,250 @@ class Character extends FlxSprite
 				addOffset("singDOWN-alt", -30, -27);
 
 				playAnim('idle');
+                
+			case 'bf-fresh':
+				var tex = Paths.getSparrowAtlas('neko/bf_fresh');
+				frames = tex;
+				animation.addByPrefix('idle', 'BF idle dance', 24, false);
+				animation.addByPrefix('singUP', 'BF NOTE UP0', 24, false);
+				animation.addByPrefix('singLEFT', 'BF NOTE LEFT0', 24, false);
+				animation.addByPrefix('singRIGHT', 'BF NOTE RIGHT0', 24, false);
+				animation.addByPrefix('singDOWN', 'BF NOTE DOWN0', 24, false);
+				animation.addByPrefix('singUPmiss', 'BF NOTE UP MISS', 24, false);
+				animation.addByPrefix('singLEFTmiss', 'BF NOTE LEFT MISS', 24, false);
+				animation.addByPrefix('singRIGHTmiss', 'BF NOTE RIGHT MISS', 24, false);
+				animation.addByPrefix('singDOWNmiss', 'BF NOTE DOWN MISS', 24, false);
+
+				addOffset('idle', -5);
+				addOffset("singUP", -29, 27);
+				addOffset("singRIGHT", -38, -7);
+				addOffset("singLEFT", 12, -6);
+				addOffset("singDOWN", -10, -50);
+				addOffset("singUPmiss", -29, 27);
+				addOffset("singRIGHTmiss", -30, 21);
+				addOffset("singLEFTmiss", 12, 24);
+				addOffset("singDOWNmiss", -11, -19);
+				playAnim('idle');
+                
+				flipX = true;
+
+			case 'bf-confused':
+				var tex = Paths.getSparrowAtlas('neko/bf_confused');
+				frames = tex;
+				animation.addByPrefix('idle', 'BF idle dance', 24, false);
+				animation.addByPrefix('singUP', 'BF NOTE UP0', 24, false);
+				animation.addByPrefix('singLEFT', 'BF NOTE LEFT0', 24, false);
+				animation.addByPrefix('singRIGHT', 'BF NOTE RIGHT0', 24, false);
+				animation.addByPrefix('singDOWN', 'BF NOTE DOWN0', 24, false);
+				animation.addByPrefix('singUPmiss', 'BF NOTE UP MISS', 24, false);
+				animation.addByPrefix('singLEFTmiss', 'BF NOTE LEFT MISS', 24, false);
+				animation.addByPrefix('singRIGHTmiss', 'BF NOTE RIGHT MISS', 24, false);
+				animation.addByPrefix('singDOWNmiss', 'BF NOTE DOWN MISS', 24, false);
+
+				addOffset('idle', -5);
+				addOffset("singUP", -29, 27);
+				addOffset("singRIGHT", -38, -7);
+				addOffset("singLEFT", 12, -6);
+				addOffset("singDOWN", -10, -50);
+				addOffset("singUPmiss", -29, 27);
+				addOffset("singRIGHTmiss", -30, 21);
+				addOffset("singLEFTmiss", 12, 24);
+				addOffset("singDOWNmiss", -11, -19);
+				playAnim('idle');
+                
+				flipX = true;
+                
+			case 'bf-annoyed':
+				var tex = Paths.getSparrowAtlas('neko/bf_annoyed');
+				frames = tex;
+				animation.addByPrefix('idle', 'BF idle dance', 24, false);
+				animation.addByPrefix('singUP', 'BF NOTE UP0', 24, false);
+				animation.addByPrefix('singLEFT', 'BF NOTE LEFT0', 24, false);
+				animation.addByPrefix('singRIGHT', 'BF NOTE RIGHT0', 24, false);
+				animation.addByPrefix('singDOWN', 'BF NOTE DOWN0', 24, false);
+				animation.addByPrefix('singUPmiss', 'BF NOTE UP MISS', 24, false);
+				animation.addByPrefix('singLEFTmiss', 'BF NOTE LEFT MISS', 24, false);
+				animation.addByPrefix('singRIGHTmiss', 'BF NOTE RIGHT MISS', 24, false);
+				animation.addByPrefix('singDOWNmiss', 'BF NOTE DOWN MISS', 24, false);
+
+				addOffset('idle', -2, 6);
+				addOffset("singUP", -29, 33);
+				addOffset("singRIGHT", -42, 3);
+				addOffset("singLEFT", 12, -4);
+				addOffset("singDOWN", -7, -42);
+				addOffset("singUPmiss", -29, 27);
+				addOffset("singRIGHTmiss", -30, 21);
+				addOffset("singLEFTmiss", 12, 24);
+				addOffset("singDOWNmiss", -10, -6);
+				playAnim('idle');
+                
+				flipX = true;                
+                
+			case 'bf-scared':
+				var tex = Paths.getSparrowAtlas('neko/bf_scared');
+				frames = tex;
+				animation.addByPrefix('idle', 'BF idle dance', 24, false);
+				animation.addByPrefix('singUP', 'BF NOTE UP0', 24, false);
+				animation.addByPrefix('singLEFT', 'BF NOTE LEFT0', 24, false);
+				animation.addByPrefix('singRIGHT', 'BF NOTE RIGHT0', 24, false);
+				animation.addByPrefix('singDOWN', 'BF NOTE DOWN0', 24, false);
+				animation.addByPrefix('singUPmiss', 'BF NOTE UP MISS', 24, false);
+				animation.addByPrefix('singLEFTmiss', 'BF NOTE LEFT MISS', 24, false);
+				animation.addByPrefix('singRIGHTmiss', 'BF NOTE RIGHT MISS', 24, false);
+				animation.addByPrefix('singDOWNmiss', 'BF NOTE DOWN MISS', 24, false);
+
+				addOffset('idle', -5);
+				addOffset("singUP", -29, 27);
+				addOffset("singRIGHT", -38, -7);
+				addOffset("singLEFT", 12, -6);
+				addOffset("singDOWN", -10, -50);
+				addOffset("singUPmiss", -29, 27);
+				addOffset("singRIGHTmiss", -30, 21);
+				addOffset("singLEFTmiss", 12, 24);
+				addOffset("singDOWNmiss", -11, -19);
+				playAnim('idle');
+                
+				flipX = true;
+                                
+			case 'lia-normal':
+				tex = Paths.getPackerAtlasJson('neko/nf1');
+				frames = tex;
+				animation.addByPrefix('idle', 'nf1_idle', 24);
+				animation.addByPrefix('singUP', 'nf1_up', 24);
+				animation.addByPrefix('singRIGHT', 'nf1_right', 24);
+				animation.addByPrefix('singDOWN', 'nf1_down', 24);
+				animation.addByPrefix('singLEFT', 'nf1_left', 24);
+
+				addOffset('idle');
+				addOffset("singUP");
+				addOffset("singRIGHT");
+				addOffset("singLEFT");
+				addOffset("singDOWN");
+                
+                playAnim('idle');
+
+			case 'lia-suit':
+				tex = Paths.getPackerAtlasJson('neko/lia2');
+				frames = tex;
+				animation.addByPrefix('idle', 'nf2_idle', 24);
+				animation.addByPrefix('singUP', 'nf2_up', 24);
+				animation.addByPrefix('singRIGHT', 'nf2_right', 24);
+				animation.addByPrefix('singDOWN', 'nf2_down', 24);
+				animation.addByPrefix('singLEFT', 'nf2_left', 24);
+
+				addOffset('idle', -5, -3);
+				addOffset("singUP", -33, 4);
+				addOffset("singRIGHT", 7, 0);
+				addOffset("singLEFT", -20, -1);
+				addOffset("singDOWN", -8, 1);
+                
+                playAnim('idle');
+                
+			case 'lia-bloody':
+				tex = Paths.getPackerAtlasJson('neko/lia2');
+				frames = tex;
+				animation.addByPrefix('idle', 'nf3_idle', 24);
+				animation.addByPrefix('singUP', 'nf3_up', 24);
+				animation.addByPrefix('singRIGHT', 'nf3_right', 24);
+				animation.addByPrefix('singDOWN', 'nf3_down', 24);
+				animation.addByPrefix('singLEFT', 'nf3_left', 24);
+
+				addOffset('idle', 0, -5);
+				addOffset("singUP", 0, 0);
+				addOffset("singRIGHT", 7, 0);
+				addOffset("singLEFT", -23, 2);
+				addOffset("singDOWN", -15, 0);
+                
+                playAnim('idle');
+                
+			case 'mia-normal':
+				tex = Paths.getPackerAtlasJson('neko/mia');
+				frames = tex;
+				animation.addByPrefix('idle', 'mia1_idle', 24);
+				animation.addByPrefix('singUP', 'mia1_up', 24);
+				animation.addByPrefix('singRIGHT', 'mia1_right', 24);
+				animation.addByPrefix('singDOWN', 'mia1_down', 24);
+				animation.addByPrefix('singLEFT', 'mia1_left', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 1, 2);
+				addOffset("singRIGHT", 1, 4);
+				addOffset("singLEFT", 0, 2);
+				addOffset("singDOWN", 0, -2); 
+                
+                playAnim('idle');
+
+			case 'mia-datura':
+				tex = Paths.getPackerAtlasJson('neko/mia');
+				frames = tex;
+				animation.addByPrefix('idle', 'mia2_idle', 24);
+				animation.addByPrefix('singUP', 'mia2_up', 24);
+				animation.addByPrefix('singRIGHT', 'mia2_right', 24);
+				animation.addByPrefix('singDOWN', 'mia2_down', 24);
+				animation.addByPrefix('singLEFT', 'mia2_left', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 1, 2);
+				addOffset("singRIGHT", 1, 4);
+				addOffset("singLEFT", 0, 2);
+				addOffset("singDOWN", 0, -2);
+                
+                playAnim('idle');
+                
+			case 'kia-normal':
+				tex = Paths.getPackerAtlasJson('neko/kia');
+				frames = tex;
+				animation.addByPrefix('idle', 'kia1_idle', 24);
+				animation.addByPrefix('singUP', 'kia1_up', 24);
+				animation.addByPrefix('singRIGHT', 'kia1_right', 24);
+				animation.addByPrefix('singDOWN', 'kia1_down', 24);
+				animation.addByPrefix('singLEFT', 'kia1_left', 24);
+                animation.addByPrefix('snap', 'kia1_snap', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP", 4, 0);
+				addOffset("singRIGHT", 4, 0);
+				addOffset("singLEFT", -4, 0);
+				addOffset("singDOWN", 15, 0);
+				addOffset("snap");
+                
+                playAnim('idle');
+                
+			case 'kia-shaggy':
+				tex = Paths.getPackerAtlasJson('neko/kia');
+				frames = tex;
+				trace(tex.frames.length);
+                
+				animation.addByPrefix('idle', 'kia2_idle', 24);
+				animation.addByPrefix('singUP', 'kia2_up', 24);
+				animation.addByPrefix('singRIGHT', 'kia2_right', 24);
+				animation.addByPrefix('singDOWN', 'kia2_down', 24);
+				animation.addByPrefix('singLEFT', 'kia2_left', 24);
+
+				addOffset('idle');
+				addOffset("singUP", 0, 5);
+				addOffset("singRIGHT", -30, 0);
+				addOffset("singLEFT", 30, 3);
+				addOffset("singDOWN", -12, 4);
+                
+                playAnim('idle');
+                
+			case 'anthem':
+				tex = Paths.getPackerAtlasJson('neko/anthem');
+				frames = tex;
+				animation.addByPrefix('idle', 'anthem_idle', 24);
+				animation.addByPrefix('singUP', 'anthem_up', 24);
+				animation.addByPrefix('singRIGHT', 'anthem_right', 24);
+				animation.addByPrefix('singDOWN', 'anthem_down', 24);
+				animation.addByPrefix('singLEFT', 'anthem_left', 24);
+
+				addOffset('idle');
+				addOffset("singUP");
+				addOffset("singRIGHT");
+				addOffset("singLEFT");
+				addOffset("singDOWN");
+                
+                playAnim('idle');
 		}
 
 		dance();
